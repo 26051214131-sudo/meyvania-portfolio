@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Meyvania Safa Devtrian</title>
+    <style>
+   <style>
+    body {
+        background-color: #FFF9E9;
+        color: #5D4B31;
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 75px 35px;
+        margin: 55px auto;
+        max-width: 850px;
+        background: linear-gradient(135deg, #FFF0C5, #FFE3A3);
+        border-radius: 35px;
+        box-shadow: 0 12px 35px rgba(150, 110, 40, 0.12);
+        border: 2px solid #FFFFFF;
+    }
+
+    .greeting {
+        color: #B8860B;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        color: #5D4B31;
+    }
+
+    .hero h2 {
+        color: #C69C35;
+        font-size: 24px;
+    }
+
+    .hero p {
+        line-height: 1.8;
+    }
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background-color: #FFF9E9;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #B8860B;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5D4B31;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D8A53D;
+}
+.about {
+    padding: 70px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-label {
+    color: #B8860B;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #5D4B31;
+    margin-bottom: 30px;
+}
+
+.about-card {
+    background: #FFF8E7;
+    border: 2px solid #F5D6DC;
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 10px 30px rgba(150, 110, 40, 0.08);
+    text-align: left;
+}
+
+.about-card h3 {
+    color: #5D4B31;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.about-subtitle {
+    color: #B8860B;
+    font-weight: bold;
+}
+
+.about-card p {
+    line-height: 1.9;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.interest-tags span {
+    background: #FFF0C5;
+    color: #795624;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+.about-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(180, 130, 80, 0.18);
+}
+.skills {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    color: #5D4B31;
+}
+
+.skills-intro {
+    color: #795624;
+    margin-bottom: 35px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    padding: 35px 25px;
+    border-radius: 25px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:nth-child(1) {
+    background: #FFF0C5;
+}
+
+.skill-card:nth-child(2) {
+    background: #FBE4E8;
+}
+
+.skill-card:nth-child(3) {
+    background: #F5EAF9;
+}
+
+.skill-card:nth-child(4) {
+    background: #EAF2DB;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+}
+
+.skill-icon {
+    font-size: 35px;
+}
+
+.skill-card h3 {
+    color: #5D4B31;
+}
+
+.skill-card p {
+    color: #6E5A3D;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+.achievements {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 36px;
+    color: #5D4B31;
+}
+
+.achievements-intro {
+    color: #795624;
+    margin-bottom: 35px;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 35px;
+    background: #FFF0C5;
+    border: 2px solid #F5D6DC;
+    border-radius: 25px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(180, 130, 80, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+}
+
+.achievement-icon {
+    font-size: 40px;
+}
+
+.achievement-year {
+    display: inline-block;
+    background: #FBE4E8;
+    color: #795624;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.achievement-card h3 {
+    color: #5D4B31;
+    margin: 15px 0;
+}
+
+.achievement-card p {
+    color: #6E5A3D;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .achievement-card {
+        flex-direction: column;
+    }
+}
+.contact {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #5D4B31;
+}
+
+.contact-intro {
+    color: #795624;
+    margin-bottom: 35px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.contact-card {
+    background: #FFF0C5;
+    padding: 30px;
+    border: 2px solid #F5D6DC;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:nth-child(even) {
+    background: #FBE4E8;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+}
+
+.contact-card span {
+    font-size: 35px;
+}
+
+.contact-card h3 {
+    color: #5D4B31;
+}
+
+.contact-card p {
+    color: #795624;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+    
+<body>
+    <nav class="navbar">
+    <div class="logo">Meyvania. 🌻</div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+    <section class="hero">
+    <p class="greeting">WELCOME TO MY LITTLE SPACE 🌻</p>
+    <h1>Hello, I'm Meyvania!</h1>
+    <h2>The Creative & Tech Explorer</h2>
+    <p>
+        A student at Universitas Negeri Surabaya
+        who loves learning, creativity, and
+        exploring new opportunities.
+    </p>
+</section>
+<section id="about" class="about">
+    <p class="section-label">GET TO KNOW ME ✦</p>
+    <h2>A Little About Me 🌻</h2>
+
+    <div class="about-card">
+        <h3>Meyvania Safa Devtrian</h3>
+        <p class="about-subtitle">
+            Information Systems Student • UNESA
+        </p>
+
+        <p>
+            Hi! I'm Meyvania, an Information Systems
+            student at Universitas Negeri Surabaya.
+            I'm passionate about exploring the
+            intersection of technology, creativity,
+            and communication.
+        </p>
+
+        <p>
+            I enjoy collaborative experiences,
+            discovering new perspectives, and
+            creating meaningful work while
+            continuously learning and growing.
+        </p>
+
+        <div class="interest-tags">
+            <span>💻 Technology</span>
+            <span>🎨 Creativity</span>
+            <span>💬 Communication</span>
+            <span>🌱 Growth</span>
+        </div>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <p class="section-label">MY LITTLE SUPERPOWERS ✦</p>
+    <h2>What I Can Do 🌻</h2>
+    <p class="skills-intro">
+        A little mix of technology, creativity,
+        and meaningful connections.
+    </p>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <span class="skill-icon">💻</span>
+            <h3>Technology Explorer</h3>
+            <p>Learning programming, exploring digital tools,
+            and understanding information systems.</p>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon">🎨</span>
+            <h3>Creative Design</h3>
+            <p>Creating visual content, digital posters,
+            and exploring creative ideas using Canva.</p>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon">💬</span>
+            <h3>Communication</h3>
+            <p>Developing communication skills and exploring
+            my interest in Public Relations.</p>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon">🤝</span>
+            <h3>Team Collaboration</h3>
+            <p>Enjoying collaborative projects, sharing ideas,
+            and learning through teamwork.</p>
+        </div>
+    </div>
+</section>
+<section id="achievements" class="achievements">
+    <p class="section-label">MY LITTLE MILESTONES ✦</p>
+    <h2>Achievements & Experiences 🏆</h2>
+    <p class="achievements-intro">
+        Every experience is a little step toward growth.
+    </p>
+
+    <div class="achievement-card">
+        <span class="achievement-icon">🌟</span>
+        <div>
+            <span class="achievement-year">2025</span>
+            <h3>OSN-K Ekonomi 2025</h3>
+            <p><strong>Peran:</strong> Peserta</p>
+            <p><strong>Penyelenggara:</strong>
+                Balai Pengembangan Talenta Indonesia (BPTI)
+            </p>
+            <p>
+                Mengikuti Olimpiade Sains Nasional
+                tingkat Kabupaten/Kota bidang Ekonomi
+                sebagai pengalaman mengembangkan
+                kemampuan analisis dan pemecahan masalah.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <p class="section-label">LET'S CONNECT ✦</p>
+    <h2>Let's Keep in Touch 💌</h2>
+    <p class="contact-intro">
+        Always happy to connect, share ideas,
+        and explore new opportunities!
+    </p>
+
+    <div class="contact-container">
+        <div class="contact-card">
+            <span>📧</span>
+            <h3>Email</h3>
+            <p>
+    <a href="mailto:26051214131@mhs.unesa.ac.id">
+        26051214131@mhs.unesa.ac.id
+    </a>
+</p>
+        </div>
+
+        <div class="contact-card">
+            <span>💻</span>
+            <h3>GitHub</h3>
+            <p>Coming soon</p>
+        </div>
+
+        <div class="contact-card">
+            <span>🌐</span>
+            <h3>LinkedIn</h3>
+            <p>Coming soon</p>
+        </div>
+
+        <div class="contact-card">
+            <span>📄</span>
+            <h3>My Resume</h3>
+            <p>Coming soon</p>
+        </div>
+    </div>
+</section>
+</html>
