@@ -233,6 +233,7 @@
     align-items: flex-start;
     gap: 25px;
     padding: 35px;
+    margin-bottom: 25px;
     background: #FFF0C5;
     border: 2px solid #F5D6DC;
     border-radius: 25px;
@@ -329,6 +330,66 @@
         grid-template-columns: 1fr;
     }
 }
+/* MY EXPERIENCES */
+#experiences {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#experiences h2 {
+    font-size: 36px;
+    color: #5D4B31;
+    margin-bottom: 12px;
+}
+
+#experiences .section-subtitle {
+    color: #795624;
+    margin-bottom: 35px;
+}
+/* SUNFLOWER DIARY BACKGROUND */
+body {
+    background-color: #FFF9F0;
+    background-image: linear-gradient(
+        135deg,
+        #FFF9F0 0%,
+        #FFF0F5 50%,
+        #FFF4D6 100%
+    );
+    background-attachment: fixed;
+}
+/* SUNFLOWER DIARY DECORATION */
+body::before {
+    content: "🌻  ✿  🌼  🌻  ✿  🌼";
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 35px;
+    opacity: 0.22;
+    pointer-events: none;
+    z-index: 0;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}
+/* SUNFLOWER DIARY PROFILE PHOTO */
+.profile-photo {
+    display: block;
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+    border: 4px solid #F6DFA7;
+    box-shadow: 0 10px 30px rgba(139, 95, 65, 0.18);
+    margin: 25px auto;
+}
 </style>
 </head>
     
@@ -347,6 +408,7 @@
     <section class="hero">
     <p class="greeting">WELCOME TO MY LITTLE SPACE 🌻</p>
     <h1>Hello, I'm Meyvania!</h1>
+    <img src="meyvania. safa.jpeg" alt="Foto Meyvania" class="profile-photo">
     <h2>The Creative & Tech Explorer</h2>
     <p>
         A student at Universitas Negeri Surabaya
@@ -425,13 +487,65 @@
         </div>
     </div>
 </section>
+<!-- MY EXPERIENCES -->
+<section id="experiences">
+    <div class="container">
+        <h2>My Experiences 🌻</h2>
+        <p class="section-subtitle">
+            Little steps, meaningful experiences.
+        </p>
+
+        <div class="achievement-card">
+            <span class="achievement-icon">🌷</span>
+            <div>
+                <span class="achievement-year">2023–2026</span>
+                <h3>Palang Merah Remaja (PMR)</h3>
+                <p><strong>SMA Negeri 22 Surabaya</strong></p>
+                <p>
+                    Pengalaman berorganisasi yang
+                    membantu mengembangkan kerja sama
+                    tim, kepedulian sosial, kedisiplinan,
+                    dan rasa tanggung jawab.
+                </p>
+            </div>
+        </div>
+        <div class="achievement-card">
+    <span class="achievement-icon">🌷</span>
+    <div>
+        <span class="achievement-year">2025–2026</span>
+        <h3>School Event Committee & MC</h3>
+        <p><strong>SMA Negeri 22 Surabaya</strong></p>
+        <p>
+            Berpartisipasi dalam Divisi Acara,
+            menjadi MC kegiatan sekolah,
+            serta membantu koordinasi dan
+            persiapan acara.
+        </p>
+    </div>
+</div>
+    </div>
+</section>
 <section id="achievements" class="achievements">
     <p class="section-label">MY LITTLE MILESTONES ✦</p>
     <h2>Achievements & Experiences 🏆</h2>
     <p class="achievements-intro">
         Every experience is a little step toward growth.
     </p>
-
+<div class="achievement-card">
+    <span class="achievement-icon">🏆</span>
+    <div>
+        <span class="achievement-year">2024</span>
+        <h3>3rd Place – Krida Duta Bahasa</h3>
+        <p><strong>Prestasi:</strong> Juara 3</p>
+        <p><strong>Tingkat:</strong> Sekolah</p>
+        <p>
+            Meraih juara ketiga dalam kompetisi
+            Duta Bahasa tingkat sekolah sebagai
+            pengalaman mengembangkan kemampuan
+            komunikasi dan kepercayaan diri.
+        </p>
+    </div>
+</div>
     <div class="achievement-card">
         <span class="achievement-icon">🌟</span>
         <div>
